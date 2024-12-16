@@ -15,7 +15,7 @@ all_df.sort_values(by="dteday", inplace=True)
 min_date, max_date = all_df["dteday"].min(), all_df["dteday"].max()
 
 with st.sidebar:
-    st.image("dashboard/bike.png", use_container_width=True)
+    st.image("dashboard/bike.png", use_column_width=True)
     st.title("Filter Data 📅")
     start_date, end_date = st.date_input("Select Date Range", 
                                         [min_date, max_date], 
@@ -70,8 +70,6 @@ ax.plot(monthly_rentals_df["dteday"], monthly_rentals_df["cnt"],
 ax.set_title("Monthly Rentals | Penyewaan Bulanan")
 ax.set_xlabel("Month / Bulan")
 ax.set_ylabel("Total Customers / Total Pelanggan")
-plt.xticks(rotation=45, ha="right")
-
 st.pyplot(fig)
 
 st.write("\n")
