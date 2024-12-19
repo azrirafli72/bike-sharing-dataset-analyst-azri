@@ -67,15 +67,10 @@ Untuk menjalankan dashboard ini secara lokal, berikut adalah langkah-langkah yan
 
 ### **Menjalankan Dashboard Secara Lokal**
 
-1. Pindah ke direktori `dashboard`:
-    ```bash
-    cd dashboard
-    ```
-
-2. Jalankan aplikasi Streamlit:
-    ```bash
-    streamlit run dashboard.py
-    ```
+Jalankan aplikasi Streamlit:
+```bash
+streamlit run dashboard.py
+```
 
 ---
 
